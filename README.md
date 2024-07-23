@@ -1,27 +1,29 @@
-# RealworldAngularTemplate
+# Realworld Angular template
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.1.1.
+## Development setup
 
-## Development server
+To run the documentation locally, you need to have [Node.js](https://nodejs.org/en) and [pnpm](https://pnpm.io/fr/) installed on your machine.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+### Install dependencies
 
-## Code scaffolding
+```bash
+pnpm install
+```
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### Start the development server
 
-## Build
+```bash
+pnpm start
+```
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+The application will be available at [http://localhost:4200](http://localhost:4200) by default. Check your terminal for the exact URL.
 
-## Running unit tests
+## Commands reference
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+All commands are run from the root of the project, from a terminal:
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+| Command                      | Action                                         |
+|:-----------------------------|:-----------------------------------------------|
+| `pnpm install`               | Installs dependencies                          |
+| `pnpm start`                 | Starts local dev server at `localhost:4200`    |
+| `pnpm build`                 | Build your production site to `./dist/browser` |
