@@ -4,7 +4,7 @@ Welcome to the contribution guide for the RealWorld Angular project! We are exci
 
 ## Code of Conduct
 
-Please read and follow our [Code of Conduct](https://github.com/realworld-angular/realworld-angular-template?tab=coc-ov-file) to ensure a welcoming and inclusive environment.
+Please read and follow our [Code of Conduct](https://github.com/realworld-angular/realworld-angular-starter?tab=coc-ov-file) to ensure a welcoming and inclusive environment.
 
 ## Contribution opportunities
 
@@ -22,15 +22,15 @@ There are many ways to contribute to the project. Here are some ideas to get you
 
 ## Got a question or problem?
 
-[GitHub issues](https://github.com/realworld-angular/realworld-angular-template/issues) is the best place for bug reports and feature requests.
-If you have some other question not required to be tracked in the issues, please open a discussion in the [Discussions](https://github.com/orgs/realworld-angular-template/discussions).
+[GitHub issues](https://github.com/realworld-angular/realworld-angular-starter/issues) is the best place for bug reports and feature requests.
+If you have some other question not required to be tracked in the issues, please open a discussion in the [Discussions](https://github.com/orgs/realworld-angular-starter/discussions).
 
 ## Found a bug?
 
-If you find a bug in the project, please firstly check if it's tracked in the [GitHub issues](https://github.com/realworld-angular/realworld-angular-template/issues).
+If you find a bug in the project, please firstly check if it's tracked in the [GitHub issues](https://github.com/realworld-angular/realworld-angular-starter/issues).
 
 If there is already an issue for the bug, please add a comment to the existing issue if you have some additional information to help in solving it.
-If there is no issue for the bug, please create a new issue [here](https://github.com/realworld-angular/realworld-angular-template/issues/new/choose).
+If there is no issue for the bug, please create a new issue [here](https://github.com/realworld-angular/realworld-angular-starter/issues/new/choose).
 
 ### Submission Guidelines
 
@@ -39,10 +39,10 @@ Open-source communication is asynchronous by nature, so the more complete is eac
 
 ## Missing a feature?
 
-If you have a feature request, please firstly check if it's tracked in the [GitHub issues](https://github.com/realworld-angular/realworld-angular-template/issues).
+If you have a feature request, please firstly check if it's tracked in the [GitHub issues](https://github.com/realworld-angular/realworld-angular-starter/issues).
 
 If there is already an issue for the bug, feel free to comment it with your thoughts. A fresh perspective is always welcome.
-If there is no issue for the feature, please create a new issue [here](https://github.com/realworld-angular/realworld-angular-template/issues/new/choose).
+If there is no issue for the feature, please create a new issue [here](https://github.com/realworld-angular/realworld-angular-starter/issues/new/choose).
 
 We encourage you to wait for feedback from the maintainers before starting to work on the feature. This will help to avoid duplicated work and ensure that the feature fits the project's goals.
 
@@ -111,7 +111,7 @@ git push origin feature/my-new-feature
 
 ### Open a pull request
 
-Once you have pushed your changes to your fork on GitHub, you can open a [pull request](https://github.com/realworld-angular/realworld-angular-template/pulls). Make sure to fill the pull request template with the required information.
+Once you have pushed your changes to your fork on GitHub, you can open a [pull request](https://github.com/realworld-angular/realworld-angular-starter/pulls). Make sure to fill the pull request template with the required information.
 
 ### Submission Guidelines
 

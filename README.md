@@ -1,4 +1,4 @@
-# Realworld Angular template
+# Realworld Angular Starter
 
 ## Development setup
 
