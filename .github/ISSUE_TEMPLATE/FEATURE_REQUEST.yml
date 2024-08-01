@@ -1,0 +1,30 @@
+name: 🚀 Feature request
+description: Suggest a feature for RealWorld Angular starter project
+title: '[Feature Request]:'
+body:
+  - type: markdown
+    attributes:
+      value: '# Feature Request'
+  - type: textarea
+    attributes:
+      label: Description
+      description: ' <!-- ✍️--> '
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Describe the solution you'd like
+      description: If you have a solution in mind, please describe it.
+  - type: textarea
+    attributes:
+      label: Describe alternatives you've considered
+      description: Have you considered any alternative solutions or workarounds?
+  - type: dropdown
+    id: contribute
+    attributes:
+      label: Do you want to contribute with a pull request?
+      options:
+        - 'Yes'
+        - 'No'
+    validations:
+      required: true
