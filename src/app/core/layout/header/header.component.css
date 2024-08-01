@@ -1,0 +1,44 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5rem;
+  padding-inline: 1rem;
+}
+
+.logo:focus {
+  border-radius: 0.5rem;
+  outline: 2px solid var(--primary-color);
+}
+
+.static-logo {
+  display: none;
+}
+
+.nav-container {
+  flex: 1;
+}
+
+.nav-list {
+  display: flex;
+  gap: 2rem;
+}
+
+.auth-buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+
+
+
+
+@media (prefers-reduced-motion: reduce) {
+  .animated-logo {
+    display: none;
+  }
+
+  .static-logo {
+    display: block;
+  }
+}

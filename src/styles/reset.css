@@ -1,0 +1,12 @@
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+button {
+  border: none;
+}
+
+a {
+  text-decoration: none;
+}
