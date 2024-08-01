@@ -17,13 +17,13 @@ describe('AppComponent', () => {
   it(`should have the 'realworld-angular-template' title`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('realworld-angular-template');
+    expect(app.title).toEqual('realworld-angular-starter');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, realworld-angular-template');
+    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, realworld-angular-starter');
   });
 });

@@ -7,7 +7,7 @@
   },
   "newProjectRoot": "projects",
   "projects": {
-    "realworld-angular-template": {
+    "realworld-angular-starter": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/realworld-angular-template",
+            "outputPath": "dist/realworld-angular-starter",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -63,10 +63,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "realworld-angular-template:build:production"
+              "buildTarget": "realworld-angular-starter:build:production"
             },
             "development": {
-              "buildTarget": "realworld-angular-template:build:development"
+              "buildTarget": "realworld-angular-starter:build:development"
             }
           },
           "defaultConfiguration": "development"
