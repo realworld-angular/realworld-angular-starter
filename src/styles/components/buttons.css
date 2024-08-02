@@ -8,6 +8,7 @@
   font-weight: 500;
   line-height: 1.25rem;
   cursor: pointer;
+  text-align: center;
 }
 
 .btn:hover,
