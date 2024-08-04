@@ -1,5 +1,7 @@
 # Realworld Angular Starter
 
+![continuous integration](https://github.com/realworld-angular/realworld-angular-starter/actions/workflows/continuous-integration.yml/badge.svg)
+
 ## Development setup
 
 To run the documentation locally, you need to have [Node.js](https://nodejs.org/en) and [pnpm](https://pnpm.io/fr/) installed on your machine.
