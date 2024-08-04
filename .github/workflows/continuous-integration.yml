@@ -1,0 +1,23 @@
+name: Format Check
+
+on: [push, pull_request]
+
+jobs:
+  format-check:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 9
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Run Prettier check
+        run: pnpm prettier --check "src/**/*.{ts,html,css,json,md,yaml,yml}"
