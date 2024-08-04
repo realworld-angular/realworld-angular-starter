@@ -8,8 +8,8 @@ const meta: Meta = {
   },
   argTypes: {
     label: {
-      control: {type: 'text'},
-    }
+      control: { type: 'text' },
+    },
   },
 };
 
@@ -18,10 +18,10 @@ type Story = StoryObj;
 
 export const Primary: Story = {
   args: {
-    label: "Log In"
+    label: 'Log In',
   },
   render: (args) => ({
     props: args,
-    template: `<div class="filled-btn">${args['label']}</div>`
-  })
+    template: `<div class="filled-btn">${args['label']}</div>`,
+  }),
 };

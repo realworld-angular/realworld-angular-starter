@@ -29,10 +29,6 @@
   gap: 1rem;
 }
 
-
-
-
-
 @media (prefers-reduced-motion: reduce) {
   .animated-logo {
     display: none;

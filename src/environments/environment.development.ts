@@ -10,5 +10,5 @@ export const environment = {
     base-uri 'self';
     form-action 'self';
     connect-src 'self';
-  `
+  `,
 };

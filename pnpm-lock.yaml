@@ -106,6 +106,9 @@ devDependencies:
   karma-jasmine-html-reporter:
     specifier: ~2.1.0
     version: 2.1.0(jasmine-core@5.1.2)(karma-jasmine@5.1.0)(karma@6.4.3)
+  prettier:
+    specifier: 3.3.3
+    version: 3.3.3
   storybook:
     specifier: ^8.2.7
     version: 8.2.7

@@ -9,7 +9,10 @@
     "test": "ng test",
     "storybook": "ng run realworld-angular-starter:storybook",
     "build-storybook": "ng run realworld-angular-starter:build-storybook",
-    "chromatic": "npx chromatic --exit-zero-on-changes"
+    "chromatic": "npx chromatic --exit-zero-on-changes",
+    "prepare": "husky install",
+    "format": "prettier --write \"src/**/*.{ts,html,css,json,md,yaml,yml}\"",
+    "format:check": "prettier --check \"src/**/*.{ts,html,css,json,md,yaml,yml}\""
   },
   "private": true,
   "dependencies": {
@@ -48,7 +51,14 @@
     "karma-coverage": "~2.2.0",
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
+    "prettier": "3.3.3",
     "storybook": "^8.2.7",
     "typescript": "~5.5.2"
+  },
+  "lint-staged": {
+    "src/**/*.{ts,html,css,json,md,yaml,yml}": [
+      "prettier --write",
+      "git add"
+    ]
   }
 }
