@@ -21,3 +21,6 @@ jobs:
 
       - name: Run Prettier check
         run: pnpm prettier --check "src/**/*.{ts,html,css,json,md,yaml,yml}"
+
+      - name: Run ESLint check
+        run: pnpm run lint
