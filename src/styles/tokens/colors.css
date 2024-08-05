@@ -10,5 +10,6 @@
   --text-color__invert: #181818;
   --background-color: #181818;
 
-  --error-color: #ff0000;
+  --error-color: #ff0f0f;
+  --success-color: #00ff00;
 }

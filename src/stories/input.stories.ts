@@ -73,3 +73,43 @@ export const Required: Story = {
       `,
   }),
 };
+
+export const RequiredFilled: Story = {
+  args: {
+    label: 'Username',
+  },
+  render: (args) => ({
+    props: {
+      ...args,
+      formControl: (() => {
+        const control = new FormControl('filled', Validators.required);
+        control.markAsTouched();
+        return control;
+      })(),
+    },
+    template: ` <app-form-field ${argsToTemplate(args)}>
+              <input app-field type="text" [formControl]="formControl" />
+              </app-form-field>
+      `,
+  }),
+};
+
+export const Invalid: Story = {
+  args: {
+    label: 'Username',
+  },
+  render: (args) => ({
+    props: {
+      ...args,
+      formControl: (() => {
+        const control = new FormControl('', Validators.required);
+        control.markAsTouched();
+        return control;
+      })(),
+    },
+    template: ` <app-form-field ${argsToTemplate(args)}>
+              <input app-field type="text" [formControl]="formControl" />
+              </app-form-field>
+      `,
+  }),
+};
