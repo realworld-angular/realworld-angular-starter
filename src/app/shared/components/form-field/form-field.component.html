@@ -6,22 +6,31 @@
         <span class="required">*</span>
       }
     </span>
-    <div class="field-input" [class.focused]="field().isFocus()">
+    <div
+      class="field-input"
+      [class.focused]="field().isFocus()"
+      [class.invalid]="control().touched && control().invalid"
+    >
       <ng-content select="input, textarea, select"></ng-content>
       <ng-content select="button"></ng-content>
+      <div class="field-validation">
+        @if (control().touched && control().invalid) {
+          <img ngSrc="/icons/error-icon.svg" alt="" height="24" width="24" />
+        } @else if (control().touched && control().valid) {
+          <img ngSrc="/icons/valid-icon.svg" alt="" height="24" width="24" />
+        }
+      </div>
     </div>
   </label>
-  @if (control().touched && control().invalid) {
-    <div class="error-container" aria-live="polite">
+  <div class="error-container" aria-live="polite">
+    @if (control().touched && control().invalid) {
       <!-- avoid displaying an error related to the control format if the field is empty -->
       @if (!control().hasError("required")) {
         <ng-content select="app-error-message"></ng-content>
       }
       @if (control().hasError("required")) {
-        <app-error-message
-          >The {{ label() | lowercase }} is required
-        </app-error-message>
+        <app-error-message>Required field</app-error-message>
       }
-    </div>
-  }
+    }
+  </div>
 </fieldset>
