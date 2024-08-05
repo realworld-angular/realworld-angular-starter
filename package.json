@@ -44,6 +44,7 @@
     "@storybook/addon-interactions": "^8.2.7",
     "@storybook/addon-links": "^8.2.7",
     "@storybook/addon-onboarding": "^8.2.7",
+    "storybook-addon-pseudo-states": "^3.1.1",
     "@storybook/angular": "^8.2.7",
     "@storybook/blocks": "^8.2.7",
     "@storybook/test": "^8.2.7",

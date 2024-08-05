@@ -25,3 +25,33 @@ export const Primary: Story = {
     template: `<div class="filled-btn">${args['label']}</div>`,
   }),
 };
+
+export const Hovered: Story = {
+  args: {
+    label: 'Log In',
+  },
+  parameters: {
+    pseudo: {
+      hover: true,
+    },
+  },
+  render: (args) => ({
+    props: args,
+    template: `<div class="filled-btn">${args['label']}</div>`,
+  }),
+};
+
+export const Focused: Story = {
+  args: {
+    label: 'Log In',
+  },
+  parameters: {
+    pseudo: {
+      focus: true,
+    },
+  },
+  render: (args) => ({
+    props: args,
+    template: `<div class="filled-btn">${args['label']}</div>`,
+  }),
+};
