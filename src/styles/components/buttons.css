@@ -4,7 +4,7 @@
   color: var(--text-color);
   background-color: transparent;
   padding: 0.5rem 1rem;
-  border-radius: 0.5rem;
+  border-radius: var(--border-radius);
   font-weight: 500;
   line-height: 1.25rem;
   cursor: pointer;
@@ -31,5 +31,6 @@
 }
 
 .filled-btn:focus {
-  outline: 2px solid var(--accent-color__light);
+  outline-offset: 2px;
+  outline: var(--accent-color) solid 2px;
 }
