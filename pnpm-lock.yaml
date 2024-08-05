@@ -109,6 +109,9 @@ devDependencies:
   angular-eslint:
     specifier: 18.2.0
     version: 18.2.0(@angular-devkit/core@18.1.3)(@angular-devkit/schematics@18.1.3)(@swc/core@1.7.6)(@typescript-eslint/utils@8.0.0)(eslint@9.8.0)(typescript-eslint@8.0.0)(typescript@5.5.4)
+  axe-playwright:
+    specifier: ^2.0.1
+    version: 2.0.1(playwright@1.46.0)
   chromatic:
     specifier: ^11.7.0
     version: 11.7.0
@@ -5750,6 +5753,10 @@ packages:
     resolution: {integrity: sha512-5+fP8P8MFNC+AyZCDxrB2pkZFPGzqQWUzpSeuuVLvm8VMcorNYavBqoFcxK8bQz4Qsbn4oUEEem4wDLfcysGHA==}
     dev: true
 
+  /@types/junit-report-builder@3.0.2:
+    resolution: {integrity: sha512-R5M+SYhMbwBeQcNXYWNCZkl09vkVfAtcPIaCGdzIkkbeaTrVbGQ7HVgi4s+EmM/M1K4ZuWQH0jGcvMvNePfxYA==}
+    dev: true
+
   /@types/lodash@4.17.7:
     resolution: {integrity: sha512-8wTvZawATi/lsmNu10/j2hk1KEP0IvjubqPE3cu1Xz7xfXXt5oCq3SNUz4fMIP4XGF9Ky+Ue2tBA3hcS7LSBlA==}
     dev: true
@@ -6560,6 +6567,30 @@ packages:
   /axe-core@4.10.0:
     resolution: {integrity: sha512-Mr2ZakwQ7XUAjp7pAwQWRhhK8mQQ6JAaNWSjmjxil0R8BPioMtQsTLOolGYkji1rcL++3dCqZA3zWqpT+9Ew6g==}
     engines: {node: '>=4'}
+    dev: true
+
+  /axe-html-reporter@2.2.3(axe-core@4.10.0):
+    resolution: {integrity: sha512-io8aCEt4fJvv43W+33n3zEa8rdplH5Ti2v5fOnth3GBKLhLHarNs7jj46xGfpnGnpaNrz23/tXPHC3HbwTzwwA==}
+    engines: {node: '>=8.9.0'}
+    peerDependencies:
+      axe-core: '>=3'
+    dependencies:
+      axe-core: 4.10.0
+      mustache: 4.2.0
+      rimraf: 3.0.2
+    dev: true
+
+  /axe-playwright@2.0.1(playwright@1.46.0):
+    resolution: {integrity: sha512-MHjNjGARulF9XzqSfspmNjw+tpBz4x9o1VlTuLWEUW9fqzhn+xWa1qEpuOIQPbsRWQiLfooDjQAunLeE0PM5AQ==}
+    peerDependencies:
+      playwright: '>1.0.0'
+    dependencies:
+      '@types/junit-report-builder': 3.0.2
+      axe-core: 4.10.0
+      axe-html-reporter: 2.2.3(axe-core@4.10.0)
+      junit-report-builder: 3.2.1
+      picocolors: 1.0.1
+      playwright: 1.46.0
     dev: true
 
   /axios@1.7.3:
@@ -7640,6 +7671,11 @@ packages:
 
   /date-format@4.0.14:
     resolution: {integrity: sha512-39BOQLs9ZjKh0/patS9nrT8wc3ioX3/eA/zgbKNopnF2wCqJEoxywwwElATYvRsXdnOxA/OQeQoFZ3rFjVajhg==}
+    engines: {node: '>=4.0'}
+    dev: true
+
+  /date-format@4.0.3:
+    resolution: {integrity: sha512-7P3FyqDcfeznLZp2b+OMitV9Sz2lUnsT87WaTat9nVwqsBkTzPG3lPLNwW3en6F4pHUiWzr6vb8CLhjdK9bcxQ==}
     engines: {node: '>=4.0'}
     dev: true
 
@@ -10686,6 +10722,16 @@ packages:
     engines: {'0': node >= 0.2.0}
     dev: true
 
+  /junit-report-builder@3.2.1:
+    resolution: {integrity: sha512-IMCp5XyDQ4YESDE4Za7im3buM0/7cMnRfe17k2X8B05FnUl9vqnaliX6cgOEmPIeWKfJrEe/gANRq/XgqttCqQ==}
+    engines: {node: '>=8'}
+    dependencies:
+      date-format: 4.0.3
+      lodash: 4.17.21
+      make-dir: 3.1.0
+      xmlbuilder: 15.1.1
+    dev: true
+
   /karma-chrome-launcher@3.2.0:
     resolution: {integrity: sha512-rE9RkUPI7I9mAxByQWkGJFXfFD6lE4gC5nPuZdobf/QdTEJI6EU4yIay/cfU/xV4ZxlM5JiTv7zWYgA64NpS5Q==}
     dependencies:
@@ -11476,6 +11522,11 @@ packages:
     dependencies:
       dns-packet: 5.6.1
       thunky: 1.1.0
+    dev: true
+
+  /mustache@4.2.0:
+    resolution: {integrity: sha512-71ippSywq5Yb7/tVYyGbkBggbU8H3u5Rz56fH60jGFgr8uHwxs+aSKeqmluIVzM0m0kB7xQjKS6qPfd0b2ZoqQ==}
+    hasBin: true
     dev: true
 
   /mute-stream@1.0.0:
@@ -14940,6 +14991,11 @@ packages:
 
   /xml@1.0.1:
     resolution: {integrity: sha512-huCv9IH9Tcf95zuYCsQraZtWnJvBtLVE0QHMOs8bWyZAFZNDcYjsPq1nEx8jKA9y+Beo9v+7OBPRisQTjinQMw==}
+    dev: true
+
+  /xmlbuilder@15.1.1:
+    resolution: {integrity: sha512-yMqGBqtXyeN1e3TGYvgNgDVZ3j84W4cwkOXQswghol6APgZWaff9lnbvN7MHYJOiXsvGPXtjTYJEiC9J2wv9Eg==}
+    engines: {node: '>=8.0'}
     dev: true
 
   /xmldoc@1.3.0:
