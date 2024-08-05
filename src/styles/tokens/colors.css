@@ -3,7 +3,12 @@
   --accent-color: #68baa6;
   --accent-color__light: #c6fced;
 
+  --neutral-color__light: #828282;
+  --neutral-color: #3b3b3b;
+
   --text-color: #e0e0e0;
   --text-color__invert: #181818;
   --background-color: #181818;
+
+  --error-color: #ff0000;
 }

@@ -1,0 +1,45 @@
+.field {
+  all: unset;
+  display: flex;
+  flex-direction: column;
+}
+
+.label-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.label-text {
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.error-container {
+  display: flex;
+  flex-direction: column;
+  margin-block-start: 0.25rem;
+}
+
+.focused {
+  outline-offset: 2px;
+  outline: var(--neutral-color__light) solid 2px;
+}
+
+.field-input {
+  height: 2.5rem;
+  border-width: 1px;
+  border-style: solid;
+  border-color: var(--neutral-color__light);
+  border-radius: var(--border-radius);
+  background-color: var(--neutral-color);
+  padding-inline-start: 1rem;
+  padding-inline-end: 0.5rem;
+
+  display: flex;
+  gap: 1rem;
+}
+
+.required {
+  color: var(--error-color);
+}

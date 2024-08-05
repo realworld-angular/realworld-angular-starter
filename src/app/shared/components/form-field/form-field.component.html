@@ -1,0 +1,27 @@
+<fieldset class="field">
+  <label class="label-container">
+    <span class="label-text">
+      {{ label() }}
+      @if (isRequired()) {
+        <span class="required">*</span>
+      }
+    </span>
+    <div class="field-input" [class.focused]="field().isFocus()">
+      <ng-content select="input, textarea, select"></ng-content>
+      <ng-content select="button"></ng-content>
+    </div>
+  </label>
+  @if (control().touched && control().invalid) {
+    <div class="error-container" aria-live="polite">
+      <!-- avoid displaying an error related to the control format if the field is empty -->
+      @if (!control().hasError("required")) {
+        <ng-content select="app-error-message"></ng-content>
+      }
+      @if (control().hasError("required")) {
+        <app-error-message
+          >The {{ label() | lowercase }} is required
+        </app-error-message>
+      }
+    </div>
+  }
+</fieldset>

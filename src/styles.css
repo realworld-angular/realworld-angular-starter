@@ -2,8 +2,10 @@
 @import "./styles/reset.css";
 
 @import "./styles/components/buttons.css";
+@import "./styles/components/form.css";
 
 @import "./styles/tokens/colors.css";
+@import "./styles/tokens/shapes.css";
 
 body {
   color: var(--text-color);
