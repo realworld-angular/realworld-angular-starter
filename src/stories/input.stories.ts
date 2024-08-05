@@ -7,6 +7,7 @@ import {
 import { FormFieldComponent } from '../app/shared/components/form-field/form-field.component';
 import { FormControl, ReactiveFormsModule, Validators } from '@angular/forms';
 import { FieldDirective } from '../app/shared/directives/field.directive';
+import { userEvent, within, expect } from '@storybook/test';
 
 const meta: Meta = {
   title: 'Example/Input',
@@ -74,42 +75,28 @@ export const Required: Story = {
   }),
 };
 
-export const RequiredFilled: Story = {
-  args: {
-    label: 'Username',
+export const Filled: Story = {
+  ...Required,
+  tags: ['!autodocs'],
+  play: async ({ canvasElement }) => {
+    const canvas = within(canvasElement);
+
+    await userEvent.type(canvas.getByRole('textbox'), 'Gerome');
+    await userEvent.tab();
+
+    await expect(canvas.getByTestId('valid-icon')).toBeInTheDocument();
   },
-  render: (args) => ({
-    props: {
-      ...args,
-      formControl: (() => {
-        const control = new FormControl('filled', Validators.required);
-        control.markAsTouched();
-        return control;
-      })(),
-    },
-    template: ` <app-form-field ${argsToTemplate(args)}>
-              <input app-field type="text" [formControl]="formControl" />
-              </app-form-field>
-      `,
-  }),
 };
 
 export const Invalid: Story = {
-  args: {
-    label: 'Username',
+  ...Required,
+  tags: ['!autodocs'],
+  play: async ({ canvasElement }) => {
+    const canvas = within(canvasElement);
+
+    await userEvent.click(canvas.getByRole('textbox'));
+    await userEvent.tab();
+
+    await expect(canvas.getByTestId('invalid-icon')).toBeInTheDocument();
   },
-  render: (args) => ({
-    props: {
-      ...args,
-      formControl: (() => {
-        const control = new FormControl('', Validators.required);
-        control.markAsTouched();
-        return control;
-      })(),
-    },
-    template: ` <app-form-field ${argsToTemplate(args)}>
-              <input app-field type="text" [formControl]="formControl" />
-              </app-form-field>
-      `,
-  }),
 };

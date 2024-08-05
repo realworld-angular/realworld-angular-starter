@@ -15,9 +15,21 @@
       <ng-content select="button"></ng-content>
       <div class="field-validation">
         @if (control().touched && control().invalid) {
-          <img ngSrc="/icons/error-icon.svg" alt="" height="24" width="24" />
+          <img
+            data-testid="invalid-icon"
+            ngSrc="/icons/error-icon.svg"
+            alt=""
+            height="24"
+            width="24"
+          />
         } @else if (control().touched && control().valid) {
-          <img ngSrc="/icons/valid-icon.svg" alt="" height="24" width="24" />
+          <img
+            data-testid="valid-icon"
+            ngSrc="/icons/valid-icon.svg"
+            alt=""
+            height="24"
+            width="24"
+          />
         }
       </div>
     </div>
