@@ -13,7 +13,8 @@
     "prepare": "husky install",
     "format": "prettier --write \"src/**/*.{ts,html,css,json,md,yaml,yml}\"",
     "format:check": "prettier --check \"src/**/*.{ts,html,css,json,md,yaml,yml}\"",
-    "lint": "ng lint"
+    "lint": "ng lint",
+    "test-storybook": "test-storybook"
   },
   "private": true,
   "dependencies": {
@@ -49,6 +50,7 @@
     "@storybook/angular": "^8.2.7",
     "@storybook/blocks": "^8.2.7",
     "@storybook/test": "^8.2.7",
+    "@storybook/test-runner": "^0.19.1",
     "@types/jasmine": "~5.1.0",
     "@types/node": "^22.1.0",
     "angular-eslint": "18.2.0",
