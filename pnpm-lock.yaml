@@ -133,6 +133,9 @@ devDependencies:
   storybook:
     specifier: ^8.2.7
     version: 8.2.7
+  storybook-addon-pseudo-states:
+    specifier: ^3.1.1
+    version: 3.1.1
   typescript:
     specifier: ~5.5.2
     version: 5.5.4
@@ -11818,6 +11821,10 @@ packages:
   /statuses@2.0.1:
     resolution: {integrity: sha512-RwNA9Z/7PrK06rYLIzFMlaF+l73iwpzsqRIFgbMLbTcLD6cOao82TaWefPXQvB2fOC4AjuYSEndS7N/mTCbkdQ==}
     engines: {node: '>= 0.8'}
+
+  /storybook-addon-pseudo-states@3.1.1:
+    resolution: {integrity: sha512-08JNTfsiSfj0GgNV4q6+v6iU+Acp7ib/MdySPDb8p+C8N/e+kf6lnM7kIiE/GnTPXlg3dfV6FMaWgGYVfdTcLw==}
+    dev: true
 
   /storybook@8.2.7:
     resolution: {integrity: sha512-Jb9DXue1sr3tKkpuq66VP5ItOKTpxL6t99ze1wXDbjCvPiInTdPA5AyFEjBuKjOBIh28bayYoOZa6/xbMJV+Wg==}
