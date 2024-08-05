@@ -24,8 +24,12 @@ The application will be available at [http://localhost:4200](http://localhost:42
 
 All commands are run from the root of the project, from a terminal:
 
-| Command                      | Action                                         |
-|:-----------------------------|:-----------------------------------------------|
-| `pnpm install`               | Installs dependencies                          |
-| `pnpm start`                 | Starts local dev server at `localhost:4200`    |
-| `pnpm build`                 | Build your production site to `./dist/browser` |
+| Command                             | Action                                         |
+|:------------------------------------|:-----------------------------------------------|
+| `pnpm install`                      | Installs dependencies                          |
+| `pnpm start`                        | Starts local dev server at `localhost:4200`    |
+| `pnpm build`                        | Build your production site to `./dist/browser` |
+| `pnpm exec playwright test`         | Run e2e tests                                  |
+| `pnpm exec playwright test --ui`    | Run e2e tests in interactive UI mode           |
+| `pnpm exec playwright test --debug` | Runs the tests in debug mode.                  |
+| `pnpm exec playwright codegen`      | Auto generate tests with Codegen               |
