@@ -67,6 +67,9 @@ devDependencies:
   '@compodoc/compodoc':
     specifier: ^1.1.25
     version: 1.1.25(typescript@5.5.4)
+  '@storybook/addon-a11y':
+    specifier: ^8.2.7
+    version: 8.2.7(storybook@8.2.7)
   '@storybook/addon-docs':
     specifier: ^8.2.7
     version: 8.2.7(storybook@8.2.7)
@@ -4528,6 +4531,16 @@ packages:
     resolution: {integrity: sha512-9BCxFwvbGg/RsZK9tjXd8s4UcwR0MWeFQ1XEKIQVVvAGJyINdrqKMcTRyLoK8Rse1GjzLV9cwjWV1olXRWEXVA==}
     dev: true
 
+  /@storybook/addon-a11y@8.2.7(storybook@8.2.7):
+    resolution: {integrity: sha512-fHr8a/+srayg1S8nBt6Urdi/4tHc/fO08V+5xJNZBXqjmWCxBkxslDxg1fYPixwFctoorpX279SxeVP7p/Px4w==}
+    peerDependencies:
+      storybook: ^8.2.7
+    dependencies:
+      '@storybook/addon-highlight': 8.2.7(storybook@8.2.7)
+      axe-core: 4.10.0
+      storybook: 8.2.7
+    dev: true
+
   /@storybook/addon-actions@8.2.7(storybook@8.2.7):
     resolution: {integrity: sha512-wDnMGGmaogAForkNncfCx8BEDiwxeK8zC0lj8HkRPUuH6vTr81U5RIb12Wa2TnnNKLKMFAtyPSnofHf3OAfzZQ==}
     peerDependencies:
@@ -5972,6 +5985,11 @@ packages:
     engines: {node: '>= 0.4'}
     dependencies:
       possible-typed-array-names: 1.0.0
+
+  /axe-core@4.10.0:
+    resolution: {integrity: sha512-Mr2ZakwQ7XUAjp7pAwQWRhhK8mQQ6JAaNWSjmjxil0R8BPioMtQsTLOolGYkji1rcL++3dCqZA3zWqpT+9Ew6g==}
+    engines: {node: '>=4'}
+    dev: true
 
   /axios@1.7.3:
     resolution: {integrity: sha512-Ar7ND9pU99eJ9GpoGQKhKf58GpUOgnzuaB7ueNQ5BMi0p+LZ5oaEnfF999fAArcTIBwXTCHAmGcHOZJaWPq9Nw==}
