@@ -11,9 +11,14 @@
   text-align: center;
 }
 
+.btn:focus {
+  outline-offset: 2px;
+  outline: var(--neutral-color__light) solid 2px;
+}
+
 .btn:hover,
 .nav-link:hover {
-  background-color: #3d4045;
+  background-color: var(--neutral-color__dark);
 }
 
 .nav-link:focus {
