@@ -7,7 +7,7 @@
 }
 
 .logo:focus {
-  border-radius: 0.5rem;
+  border-radius: var(--border-radius);
   outline: 2px solid var(--primary-color);
 }
 
