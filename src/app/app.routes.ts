@@ -9,4 +9,8 @@ export const routes: Routes = [
     path: 'events',
     loadChildren: () => import('./features/events/events.routes'),
   },
+  {
+    path: 'about',
+    loadChildren: () => import('./features/about/about.routes'),
+  },
 ];
