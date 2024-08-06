@@ -29,6 +29,10 @@
   gap: 1rem;
 }
 
+.active-link {
+  outline: 2px solid var(--primary-color);
+}
+
 @media (prefers-reduced-motion: reduce) {
   .animated-logo {
     display: none;
