@@ -1,5 +1,3 @@
-.btn,
-.filled-btn,
 .nav-link {
   color: var(--text-color);
   background-color: transparent;
@@ -11,12 +9,6 @@
   text-align: center;
 }
 
-.btn:focus {
-  outline-offset: 2px;
-  outline: var(--neutral-color__light) solid 2px;
-}
-
-.btn:hover,
 .nav-link:hover {
   background-color: var(--neutral-color__dark);
 }
@@ -25,38 +17,35 @@
   outline: 2px solid var(--primary-color);
 }
 
-.filled-btn {
-  background-color: var(--accent-color);
-  color: var(--text-color__invert);
-  min-width: 6rem;
+.btn {
+  padding: 0.5rem 1rem;
+  font-weight: 500;
+  line-height: 1.25rem;
 }
 
-.filled-btn:hover {
-  background-color: #50a08e;
-}
-
-.filled-btn:focus {
-  outline-offset: 2px;
-  outline: var(--accent-color) solid 2px;
-}
-
+.btn,
 .btn-icon {
   display: grid;
   place-items: center;
-  height: 3rem;
-  width: 3rem;
   border-radius: var(--border-radius);
   cursor: pointer;
-  font-size: 2rem;
-  line-height: 2rem;
   background-color: var(--neutral-color__dark);
   color: var(--text-color);
 }
 
+.btn-icon {
+  height: 3rem;
+  width: 3rem;
+  font-size: 2rem;
+  line-height: 2rem;
+}
+
+.btn:hover,
 .btn-icon:hover {
   background-color: var(--neutral-color__light);
 }
 
+.btn:focus,
 .btn-icon:focus {
   outline-offset: 2px;
   outline: var(--neutral-color__light) solid 2px;
