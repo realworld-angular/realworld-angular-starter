@@ -39,3 +39,53 @@
   outline-offset: 2px;
   outline: var(--accent-color) solid 2px;
 }
+
+.btn-icon {
+  display: grid;
+  place-items: center;
+  height: 3rem;
+  width: 3rem;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  font-size: 2rem;
+  line-height: 2rem;
+  background-color: var(--neutral-color__dark);
+  color: var(--text-color);
+}
+
+.btn-icon:hover {
+  background-color: var(--neutral-color__light);
+}
+
+.btn-icon:focus {
+  outline-offset: 2px;
+  outline: var(--neutral-color__light) solid 2px;
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  color: var(--text-color__invert);
+}
+
+.btn-primary:focus {
+  outline-offset: 2px;
+  outline: var(--primary-color) solid 2px;
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-color__dark);
+}
+
+.btn-secondary {
+  background-color: var(--accent-color);
+  color: var(--text-color__invert);
+}
+
+.btn-secondary:focus {
+  outline-offset: 2px;
+  outline: var(--accent-color) solid 2px;
+}
+
+.btn-secondary:hover {
+  background-color: var(--accent-color__dark);
+}
