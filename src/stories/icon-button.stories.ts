@@ -12,23 +12,19 @@ const meta: Meta = {
   parameters: {
     layout: 'centered',
   },
-  argTypes: {
-    label: {
-      control: { type: 'text' },
-    },
-  },
 };
 
 export default meta;
 type Story = StoryObj;
 
 export const Default: Story = {
-  args: {
-    label: 'Log In',
-  },
   render: (args) => ({
     props: args,
-    template: `<button class="btn-icon">M</button>`,
+    template: `
+        <button class="btn-icon">
+            <img ngSrc="/icons/add-icon.svg" alt="" height="24" width="24" />
+        </button>
+    `,
   }),
 };
 
@@ -51,12 +47,13 @@ export const DefaultFocused: Story = {
 };
 
 export const Primary: Story = {
-  args: {
-    label: 'Log In',
-  },
   render: (args) => ({
     props: args,
-    template: `<button class="btn-icon btn-primary">M</button>`,
+    template: `
+        <button class="btn-icon btn-primary">
+            <img ngSrc="/icons/add-icon.svg" alt="" height="24" width="24" />
+        </button>
+    `,
   }),
 };
 
@@ -79,12 +76,13 @@ export const PrimaryFocused: Story = {
 };
 
 export const Secondary: Story = {
-  args: {
-    label: 'Log In',
-  },
   render: (args) => ({
     props: args,
-    template: `<button class="btn-icon btn-secondary">M</button>`,
+    template: `
+        <button class="btn-icon btn-secondary">
+            <img ngSrc="/icons/add-icon.svg" alt="" height="24" width="24" />
+        </button>
+    `,
   }),
 };
 
@@ -99,38 +97,6 @@ export const SecondaryHovered: Story = {
 
 export const SecondaryFocused: Story = {
   ...Secondary,
-  parameters: {
-    pseudo: {
-      focus: true,
-    },
-  },
-};
-
-export const IconOnly: Story = {
-  args: {
-    label: 'Log In',
-  },
-  render: (args) => ({
-    props: args,
-    template: `
-        <button class="btn-icon">
-            <img ngSrc="/icons/add-icon.svg" alt="" height="24" width="24" />
-        </button>
-    `,
-  }),
-};
-
-export const IconOnlyHovered: Story = {
-  ...IconOnly,
-  parameters: {
-    pseudo: {
-      hover: true,
-    },
-  },
-};
-
-export const IconOnlyFocused: Story = {
-  ...IconOnly,
   parameters: {
     pseudo: {
       focus: true,
