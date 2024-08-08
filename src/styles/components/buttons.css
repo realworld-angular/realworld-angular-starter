@@ -29,7 +29,7 @@
   place-items: center;
   border-radius: var(--border-radius);
   cursor: pointer;
-  background-color: var(--neutral-color__dark);
+  background-color: var(--neutral-bg-color);
   color: var(--text-color);
 }
 
@@ -40,19 +40,23 @@
   line-height: 2rem;
 }
 
+.btn-icon img {
+  filter: var(--svg-color-filter);
+}
+
 .btn:hover,
 .btn-icon:hover {
-  background-color: var(--neutral-color__light);
+  background-color: var(--neutral-bg-color__hover);
 }
 
 .btn:focus,
 .btn-icon:focus {
   outline-offset: 2px;
-  outline: var(--neutral-color__light) solid 2px;
+  outline: var(--neutral-color) solid 2px;
 }
 
 .btn-primary {
-  background-color: var(--primary-color);
+  background-color: var(--primary-bg-color);
   color: var(--text-color__invert);
 }
 
@@ -62,19 +66,19 @@
 }
 
 .btn-primary:hover {
-  background-color: var(--primary-color__dark);
+  background-color: var(--primary-bg-color__hover);
 }
 
 .btn-secondary {
-  background-color: var(--accent-color);
+  background-color: var(--secondary-bg-color);
   color: var(--text-color__invert);
 }
 
 .btn-secondary:focus {
   outline-offset: 2px;
-  outline: var(--accent-color) solid 2px;
+  outline: var(--secondary-color) solid 2px;
 }
 
 .btn-secondary:hover {
-  background-color: var(--accent-color__dark);
+  background-color: var(--secondary-bg-color__hover);
 }

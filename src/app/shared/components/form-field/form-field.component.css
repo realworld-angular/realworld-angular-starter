@@ -23,16 +23,16 @@
 
 .focused {
   outline-offset: 2px;
-  outline: var(--neutral-color__light) solid 2px;
+  outline: var(--neutral-color-300) solid 2px;
 }
 
 .field-input {
   height: 2.5rem;
   border-width: 1px;
   border-style: solid;
-  border-color: var(--neutral-color__light);
+  border-color: var(--neutral-color-300);
   border-radius: var(--border-radius);
-  background-color: var(--neutral-color);
+  background-color: var(--neutral-color-700);
   padding-inline-start: 1rem;
   padding-inline-end: 0.5rem;
 
