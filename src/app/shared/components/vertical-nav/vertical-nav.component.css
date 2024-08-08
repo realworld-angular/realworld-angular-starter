@@ -1,0 +1,34 @@
+.vertical-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.vertical-link {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #858c94;
+  border-radius: var(--border-radius);
+  padding: 0.25rem 0.5rem;
+}
+
+.vertical-link-icon {
+  filter: invert(56%) sepia(7%) saturate(393%) hue-rotate(172deg)
+    brightness(96%) contrast(92%);
+}
+
+.active,
+.vertical-link:hover {
+  color: var(--text-color);
+  background-color: var(--neutral-color);
+}
+
+.vertical-link:hover .vertical-link-icon {
+  filter: brightness(0) saturate(100%) invert(98%) sepia(3%) saturate(3265%)
+    hue-rotate(199deg) brightness(117%) contrast(76%);
+}
+
+.vertical-link:focus {
+  outline: 2px solid var(--neutral-color__light);
+}
