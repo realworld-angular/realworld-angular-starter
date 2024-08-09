@@ -33,6 +33,7 @@
     "zone.js": "~0.14.3"
   },
   "devDependencies": {
+    "@angular-builders/custom-webpack": "^18.0.0",
     "@angular-devkit/build-angular": "^18.1.1",
     "@angular/cli": "^18.1.1",
     "@angular/compiler-cli": "^18.1.0",
@@ -56,6 +57,8 @@
     "angular-eslint": "18.2.0",
     "axe-playwright": "^2.0.1",
     "chromatic": "^11.7.0",
+    "esbuild": "^0.23.0",
+    "esbuild-loader": "^4.2.2",
     "eslint": "^9.8.0",
     "husky": "^9.0.11",
     "jasmine-core": "~5.1.0",
