@@ -1,4 +1,21 @@
 {
   "projectName": "realworld-angular-starter",
-  "projectOwner": "realworld-angular"
+  "projectOwner": "realworld-angular",
+  "files": [
+    "README.md"
+  ],
+  "commitType": "docs",
+  "commitConvention": "angular",
+  "contributorsPerLine": 7,
+  "contributors": [
+    {
+      "login": "geromegrignon",
+      "name": "Gerome Grignon",
+      "avatar_url": "https://avatars.githubusercontent.com/u/32737308?v=4",
+      "profile": "https://gerome.dev",
+      "contributions": [
+        "maintenance"
+      ]
+    }
+  ]
 }
