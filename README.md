@@ -45,6 +45,7 @@ All commands are run from the root of the project, from a terminal:
   <tbody>
     <tr>
       <td align="center" valign="top" width="14.28%"><a href="https://gerome.dev"><img src="https://avatars.githubusercontent.com/u/32737308?v=4?s=100" width="100px;" alt="Gerome Grignon"/><br /><sub><b>Gerome Grignon</b></sub></a><br /><a href="#maintenance-geromegrignon" title="Maintenance">🚧</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/ZvSimon"><img src="https://avatars.githubusercontent.com/u/73712759?v=4?s=100" width="100px;" alt="Simon"/><br /><sub><b>Simon</b></sub></a><br /><a href="#code-ZvSimon" title="Code">💻</a></td>
     </tr>
   </tbody>
 </table>
