@@ -34,3 +34,15 @@ All commands are run from the root of the project, from a terminal:
 | `pnpm exec playwright test --debug` | Runs the tests in debug mode.                  |
 | `pnpm exec playwright codegen`      | Auto generate tests with Codegen               |
 | `pnpm run test-storybook`           | Run Storybook tests                            |
+
+
+## Contributors
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+
+<!-- markdownlint-restore -->
+<!-- prettier-ignore-end -->
+
+<!-- ALL-CONTRIBUTORS-LIST:END -->
