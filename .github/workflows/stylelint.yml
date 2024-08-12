@@ -2,6 +2,8 @@ name: Lint CSS
 
 on:
   push:
+    types:
+      - pushed
   pull_request:
 
 jobs:
