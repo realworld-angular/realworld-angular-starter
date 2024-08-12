@@ -10,7 +10,7 @@
 }
 
 .nav-link:hover {
-  background-color: var(--neutral-color__dark);
+  background-color: var(--neutral-color-dark);
 }
 
 .nav-link:focus {
@@ -46,7 +46,7 @@
 
 .btn:hover,
 .btn-icon:hover {
-  background-color: var(--neutral-bg-color__hover);
+  background-color: var(--neutral-bg-color-hover);
 }
 
 .btn:focus,
@@ -57,7 +57,7 @@
 
 .btn-primary {
   background-color: var(--primary-bg-color);
-  color: var(--text-color__invert);
+  color: var(--text-color-invert);
 }
 
 .btn-primary:focus {
@@ -66,12 +66,12 @@
 }
 
 .btn-primary:hover {
-  background-color: var(--primary-bg-color__hover);
+  background-color: var(--primary-bg-color-hover);
 }
 
 .btn-secondary {
   background-color: var(--secondary-bg-color);
-  color: var(--text-color__invert);
+  color: var(--text-color-invert);
 }
 
 .btn-secondary:focus {
@@ -80,5 +80,5 @@
 }
 
 .btn-secondary:hover {
-  background-color: var(--secondary-bg-color__hover);
+  background-color: var(--secondary-bg-color-hover);
 }

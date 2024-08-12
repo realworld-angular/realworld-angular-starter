@@ -1,11 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
-@import "./styles/reset.css";
-
-@import "./styles/components/buttons.css";
-@import "./styles/components/form.css";
-
-@import "./styles/tokens/colors.css";
-@import "./styles/tokens/shapes.css";
+@import url("./styles/reset.css");
+@import url("./styles/components/buttons.css");
+@import url("./styles/components/form.css");
+@import url("./styles/tokens/colors.css");
+@import url("./styles/tokens/shapes.css");
 
 body {
   color: var(--text-color);

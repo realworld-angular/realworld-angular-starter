@@ -26,7 +26,7 @@
 
 .vertical-link:focus {
   color: var(--neutral-color-100);
-  outline: 2px solid var(--neutral-color__light);
+  outline: 2px solid var(--neutral-color-light);
 }
 
 .vertical-link:hover .vertical-link-icon,

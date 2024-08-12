@@ -1,105 +1,73 @@
 :root {
   --primary-hue: 312;
   --primary-saturation: 80%;
-
-  --primary-color-100: hsl(var(--primary-hue), var(--primary-saturation), 94%);
-  --primary-color-200: hsl(var(--primary-hue), var(--primary-saturation), 84%);
-  --primary-color-300: hsl(var(--primary-hue), var(--primary-saturation), 74%);
-  --primary-color-400: hsl(var(--primary-hue), var(--primary-saturation), 64%);
+  --primary-color-100: hsl(var(--primary-hue) var(--primary-saturation) 94%);
+  --primary-color-200: hsl(var(--primary-hue) var(--primary-saturation) 84%);
+  --primary-color-300: hsl(var(--primary-hue) var(--primary-saturation) 74%);
+  --primary-color-400: hsl(var(--primary-hue) var(--primary-saturation) 64%);
   --primary-color-500: hsl(
-    var(--primary-hue),
-    var(--primary-saturation),
-    54%
+    var(--primary-hue) var(--primary-saturation) 54%
   ); /* Base color */
-  --primary-color-600: hsl(var(--primary-hue), var(--primary-saturation), 44%);
-  --primary-color-700: hsl(var(--primary-hue), var(--primary-saturation), 34%);
-  --primary-color-800: hsl(var(--primary-hue), var(--primary-saturation), 24%);
-  --primary-color-900: hsl(var(--primary-hue), var(--primary-saturation), 14%);
 
+  --primary-color-600: hsl(var(--primary-hue) var(--primary-saturation) 44%);
+  --primary-color-700: hsl(var(--primary-hue) var(--primary-saturation) 34%);
+  --primary-color-800: hsl(var(--primary-hue) var(--primary-saturation) 24%);
+  --primary-color-900: hsl(var(--primary-hue) var(--primary-saturation) 14%);
   --primary-color: var(--primary-color-500);
-
   --primary-bg-color: var(--primary-color-500);
-  --primary-bg-color__hover: var(--primary-color-600);
-
+  --primary-bg-color-hover: var(--primary-color-600);
   --secondary-hue: 168;
   --secondary-saturation: 80%;
-
   --secondary-color-100: hsl(
-    var(--secondary-hue),
-    var(--secondary-saturation),
-    94%
+    var(--secondary-hue) var(--secondary-saturation) 94%
   );
   --secondary-color-200: hsl(
-    var(--secondary-hue),
-    var(--secondary-saturation),
-    84%
+    var(--secondary-hue) var(--secondary-saturation) 84%
   );
   --secondary-color-300: hsl(
-    var(--secondary-hue),
-    var(--secondary-saturation),
-    74%
+    var(--secondary-hue) var(--secondary-saturation) 74%
   );
   --secondary-color-400: hsl(
-    var(--secondary-hue),
-    var(--secondary-saturation),
-    64%
+    var(--secondary-hue) var(--secondary-saturation) 64%
   );
   --secondary-color-500: hsl(
-    var(--secondary-hue),
-    var(--secondary-saturation),
-    54%
+    var(--secondary-hue) var(--secondary-saturation) 54%
   ); /* Base color */
+
   --secondary-color-600: hsl(
-    var(--secondary-hue),
-    var(--secondary-saturation),
-    44%
+    var(--secondary-hue) var(--secondary-saturation) 44%
   );
   --secondary-color-700: hsl(
-    var(--secondary-hue),
-    var(--secondary-saturation),
-    34%
+    var(--secondary-hue) var(--secondary-saturation) 34%
   );
   --secondary-color-800: hsl(
-    var(--secondary-hue),
-    var(--secondary-saturation),
-    24%
+    var(--secondary-hue) var(--secondary-saturation) 24%
   );
   --secondary-color-900: hsl(
-    var(--secondary-hue),
-    var(--secondary-saturation),
-    14%
+    var(--secondary-hue) var(--secondary-saturation) 14%
   );
-
   --secondary-color: var(--secondary-color-500);
-
   --secondary-bg-color: var(--secondary-color-500);
-  --secondary-bg-color__hover: var(--secondary-color-600);
-
+  --secondary-bg-color-hover: var(--secondary-color-600);
   --neutral-hue: 0;
   --neutral-saturation: 0%;
-
-  --neutral-color-100: hsl(var(--neutral-hue), var(--neutral-saturation), 89%);
-  --neutral-color-200: hsl(var(--neutral-hue), var(--neutral-saturation), 79%);
-  --neutral-color-300: hsl(var(--neutral-hue), var(--neutral-saturation), 69%);
-  --neutral-color-400: hsl(var(--neutral-hue), var(--neutral-saturation), 59%);
-  --neutral-color-500: hsl(var(--neutral-hue), var(--neutral-saturation), 49%);
-  --neutral-color-600: hsl(var(--neutral-hue), var(--neutral-saturation), 39%);
-  --neutral-color-700: hsl(var(--neutral-hue), var(--neutral-saturation), 29%);
-  --neutral-color-800: hsl(var(--neutral-hue), var(--neutral-saturation), 19%);
-  --neutral-color-900: hsl(var(--neutral-hue), var(--neutral-saturation), 9%);
-
+  --neutral-color-100: hsl(var(--neutral-hue) var(--neutral-saturation) 89%);
+  --neutral-color-200: hsl(var(--neutral-hue) var(--neutral-saturation) 79%);
+  --neutral-color-300: hsl(var(--neutral-hue) var(--neutral-saturation) 69%);
+  --neutral-color-400: hsl(var(--neutral-hue) var(--neutral-saturation) 59%);
+  --neutral-color-500: hsl(var(--neutral-hue) var(--neutral-saturation) 49%);
+  --neutral-color-600: hsl(var(--neutral-hue) var(--neutral-saturation) 39%);
+  --neutral-color-700: hsl(var(--neutral-hue) var(--neutral-saturation) 29%);
+  --neutral-color-800: hsl(var(--neutral-hue) var(--neutral-saturation) 19%);
+  --neutral-color-900: hsl(var(--neutral-hue) var(--neutral-saturation) 9%);
   --neutral-color: var(--neutral-color-500);
-
   --neutral-bg-color: var(--neutral-color-600);
-  --neutral-bg-color__hover: var(--neutral-color-700);
-
+  --neutral-bg-color-hover: var(--neutral-color-700);
   --text-color: #e0e0e0;
-  --text-color__invert: #181818;
+  --text-color-invert: #181818;
   --background-color: #181818;
-
   --error-color: #ff0f0f;
-  --success-color: #00ff00;
-
+  --success-color: #0f0;
   --svg-color-filter: brightness(0) saturate(100%) invert(0%) sepia(3%)
     saturate(2922%) hue-rotate(316deg) brightness(98%) contrast(81%);
 }

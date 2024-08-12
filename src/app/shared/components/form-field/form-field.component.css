@@ -33,9 +33,7 @@
   border-color: var(--neutral-color-300);
   border-radius: var(--border-radius);
   background-color: var(--neutral-color-700);
-  padding-inline-start: 1rem;
-  padding-inline-end: 0.5rem;
-
+  padding-inline: 1rem 0.5rem;
   display: flex;
   gap: 1rem;
 }
