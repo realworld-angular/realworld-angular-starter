@@ -1,0 +1,34 @@
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+button {
+  font-weight: 700;
+}
+
+.password-strength-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+}
+
+.level-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.3rem;
+  width: calc(100% - 2rem);
+}
+
+.level {
+  height: 0.3rem;
+  background-color: red;
+  width: 100%;
+}
+
+.password-strength-label {
+  font-size: 0.7rem;
+  text-align: end;
+  width: calc(100% - 2rem);
+}
