@@ -7,7 +7,7 @@
 .label-container {
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
+  gap: 0.3rem;
 }
 
 .label-text {
@@ -19,6 +19,8 @@
   display: flex;
   flex-direction: column;
   min-height: 2rem;
+  padding: 0.4rem;
+  line-height: 1rem;
 }
 
 .focused {
@@ -26,8 +28,13 @@
   outline: var(--neutral-color-300) solid 2px;
 }
 
+.field-input-container {
+  display: flex;
+  gap: 0.5rem;
+}
+
 .field-input {
-  height: 2.5rem;
+  height: 2rem;
   border-width: 1px;
   border-style: solid;
   border-color: var(--neutral-color-300);
@@ -51,10 +58,4 @@
 
 .required {
   color: var(--error-color);
-}
-
-.error-message {
-  padding: 0.5rem;
-  color: var(--error-color);
-  line-height: 1rem;
 }

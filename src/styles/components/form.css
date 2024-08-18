@@ -3,3 +3,7 @@ input {
   height: 100%;
   width: 100%;
 }
+
+.field-error-message {
+  color: var(--error-color);
+}

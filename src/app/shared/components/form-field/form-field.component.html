@@ -2,17 +2,17 @@
   <label class="label-container">
     <span class="label-text">
       {{ label() }}
-      @if (isRequired()) {
+      @if (isRequired() && !isOptionalEnforced()) {
         <span class="required">*</span>
+      } @else if (!isRequired() && isOptionalEnforced()) {
+        <span class="optional">(Optional)</span>
       }
     </span>
-    <div
-      class="field-input"
-      [class.focused]="field().isFocus()"
-      [class.invalid]="control().touched && control().invalid"
-    >
-      <ng-content select="input, textarea, select"></ng-content>
-      <ng-content select="button"></ng-content>
+    <div class="field-input-container">
+      <div class="field-input" [class.focused]="field().isFocus()">
+        <ng-content select="input, textarea, select"></ng-content>
+        <ng-content select="button"></ng-content>
+      </div>
       <div class="field-validation">
         @if (control().touched && control().invalid) {
           <img
@@ -34,15 +34,20 @@
       </div>
     </div>
   </label>
-  <div class="error-container" aria-live="polite">
-    @if (control().touched && control().invalid) {
-      <!-- avoid displaying an error related to the control format if the field is empty -->
-      @if (!control().hasError("required")) {
-        <ng-content select="app-error-message"></ng-content>
+  <div class="error-container" aria-live="assertive">
+    @if (control().touched) {
+      @if (control().invalid) {
+        @if (!control().hasError("required")) {
+          <ng-content select="app-error-message"></ng-content>
+        }
+        @if (control().hasError("required")) {
+          <app-error-message>Required field</app-error-message>
+        }
       }
-      @if (control().hasError("required")) {
-        <app-error-message>Required field</app-error-message>
-      }
+    }
+
+    @if (!control().hasError("required") && !extraErrorMessages().length) {
+      <ng-content select="app-hint-message"></ng-content>
     }
   </div>
 </fieldset>

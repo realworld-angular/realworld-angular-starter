@@ -1,0 +1,32 @@
+<form [formGroup]="form" [isOptionalEnforced]="true" (ngSubmit)="submit()">
+  <app-form-field label="Username">
+    <input app-field type="text" formControlName="username" />
+  </app-form-field>
+  <app-form-field label="Email">
+    <input app-field type="text" formControlName="email" />
+    @if (form.controls.email.hasError("email")) {
+      <app-error-message>Invalid email format</app-error-message>
+    }
+  </app-form-field>
+  <app-form-field label="Password">
+    <input app-field type="password" formControlName="password" />
+    <app-hint-message class="password-strength-container">
+      <div class="level-list">
+        @for (level of passwordLevels; track level) {
+          <div class="level"></div>
+        }
+      </div>
+      <div class="password-strength-label">
+        {{ passwordLevels[passwordStrength()] }}
+      </div>
+    </app-hint-message>
+  </app-form-field>
+  <app-form-field label="Confirm password">
+    <input app-field type="password" formControlName="confirmPassword" />
+    @if (form.controls.confirmPassword.hasError("passwordMismatch")) {
+      <app-error-message>Passwords do not match</app-error-message>
+    }
+  </app-form-field>
+
+  <button type="submit" class="btn btn-primary">Sign up</button>
+</form>

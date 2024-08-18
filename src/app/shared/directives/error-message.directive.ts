@@ -7,7 +7,7 @@ import { Directive } from '@angular/core';
   selector: 'app-error-message',
   standalone: true,
   host: {
-    class: 'error-message',
+    class: 'field-error-message',
   },
 })
 export class ErrorMessageDirective {}

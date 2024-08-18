@@ -8,6 +8,7 @@ import { FormFieldComponent } from '../app/shared/components/form-field/form-fie
 import { FormControl, ReactiveFormsModule, Validators } from '@angular/forms';
 import { FieldDirective } from '../app/shared/directives/field.directive';
 import { userEvent, within, expect } from '@storybook/test';
+import { FormDirective } from '../app/shared/directives/form.directive';
 
 const meta: Meta = {
   title: 'Example/Input',
@@ -15,6 +16,7 @@ const meta: Meta = {
   decorators: [
     moduleMetadata({
       imports: [ReactiveFormsModule, FieldDirective],
+      providers: [FormDirective],
     }),
   ],
   tags: ['autodocs'],
