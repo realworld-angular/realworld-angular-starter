@@ -1,6 +1,6 @@
 :root {
   --primary-hue: 312;
-  --primary-saturation: 80%;
+  --primary-saturation: 50%;
   --primary-color-100: hsl(var(--primary-hue) var(--primary-saturation) 94%);
   --primary-color-200: hsl(var(--primary-hue) var(--primary-saturation) 84%);
   --primary-color-300: hsl(var(--primary-hue) var(--primary-saturation) 74%);
@@ -66,7 +66,7 @@
   --text-color: #e0e0e0;
   --text-color-invert: #181818;
   --background-color: #181818;
-  --error-color: #ff0f0f;
+  --error-color: #cf6679;
   --success-color: #0f0;
   --svg-color-filter: brightness(0) saturate(100%) invert(0%) sepia(3%)
     saturate(2922%) hue-rotate(316deg) brightness(98%) contrast(81%);
