@@ -18,7 +18,7 @@
 .error-container {
   display: flex;
   flex-direction: column;
-  min-height: 2rem;
+  min-height: 1.25rem;
   padding: 0.4rem;
   line-height: 1rem;
 }
@@ -26,11 +26,6 @@
 .focused {
   outline-offset: 2px;
   outline: var(--neutral-color-300) solid 2px;
-}
-
-.field-input-container {
-  display: flex;
-  gap: 0.5rem;
 }
 
 .field-input {

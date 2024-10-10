@@ -6,7 +6,7 @@
 @import url("./styles/tokens/shapes.css");
 
 body {
+  font-family: Inter, sans-serif;
   color: var(--text-color);
   background-color: var(--background-color);
-  font-family: Inter, sans-serif;
 }
