@@ -13,10 +13,11 @@ describe('VerticalNavComponent', () => {
 
     fixture = TestBed.createComponent(VerticalNavComponent);
     component = fixture.componentInstance;
-    fixture.detectChanges();
   });
 
   it('should create', () => {
+    fixture.componentRef.setInput('links', []);
+    fixture.detectChanges();
     expect(component).toBeTruthy();
   });
 });
