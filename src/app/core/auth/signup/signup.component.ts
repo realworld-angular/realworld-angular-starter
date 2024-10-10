@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, computed } from '@angular/core';
+import { ChangeDetectionStrategy, Component, output } from '@angular/core';
 import {
   AbstractControl,
   FormControl,
@@ -12,7 +12,10 @@ import { FormFieldComponent } from '../../../shared/components/form-field/form-f
 import { FieldDirective } from '../../../shared/directives/field.directive';
 import { ErrorMessageDirective } from '../../../shared/directives/error-message.directive';
 import { FormDirective } from '../../../shared/directives/form.directive';
-import { toSignal } from '@angular/core/rxjs-interop';
+import { map } from 'rxjs';
+import { AsyncPipe } from '@angular/common';
+import { SignupPayload } from '../models/signup-payload.model';
+import { HintMessageDirective } from '../../../shared/directives/hint-message.directive';
 
 interface FormType {
   username: FormControl<string>;
@@ -30,12 +33,16 @@ interface FormType {
     FieldDirective,
     ErrorMessageDirective,
     FormDirective,
+    AsyncPipe,
+    HintMessageDirective,
   ],
   templateUrl: './signup.component.html',
   styleUrl: './signup.component.css',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class SignupComponent {
+  readonly submitForm = output<SignupPayload>();
+
   form = new FormGroup<FormType>({
     username: new FormControl('', {
       validators: [Validators.required],
@@ -55,30 +62,26 @@ export class SignupComponent {
     }),
   });
 
-  formValue = toSignal(this.form.controls.password.valueChanges, {
-    initialValue: '',
-  });
-
   passwordLevels = ['weak', 'fair', 'good', 'strong', 'very strong'];
-  passwordStrength = computed(() => {
-    const password = this.formValue();
+  passwordStrength$ = this.form.controls.password.valueChanges.pipe(
+    map((password) => {
+      let strength = 0;
 
-    let strength = 0;
+      if (password.length >= 8) strength++;
+      if (/[A-Z]/.test(password)) strength++;
+      if (/[a-z]/.test(password)) strength++;
+      if (/\d/.test(password)) strength++;
+      if (/[\W_]/.test(password)) strength++;
 
-    if (password.length >= 8) strength++;
-    if (/[A-Z]/.test(password)) strength++;
-    if (/[a-z]/.test(password)) strength++;
-    if (/\d/.test(password)) strength++;
-    if (/[\W_]/.test(password)) strength++;
-
-    return strength;
-  });
+      return strength;
+    }),
+  );
 
   submit(): void {
     this.form.markAllAsTouched();
 
     if (this.form.valid) {
-      // TODO
+      this.submitForm.emit(this.form.value as SignupPayload);
     }
   }
 

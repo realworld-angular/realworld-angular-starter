@@ -4,31 +4,36 @@ form {
   align-items: stretch;
 }
 
-button {
+.btn-submit {
   font-weight: 700;
+  margin-block-start: 1rem;
 }
 
 .password-strength-container {
   display: flex;
-  flex-direction: column;
-  gap: 0.1rem;
+  gap: 0.5rem;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .level-list {
   display: flex;
   justify-content: space-between;
   gap: 0.3rem;
-  width: calc(100% - 2rem);
+  width: 100%;
 }
 
 .level {
   height: 0.3rem;
-  background-color: red;
   width: 100%;
+}
+
+.level-active {
+  background-color: var(--success-color);
 }
 
 .password-strength-label {
   font-size: 0.7rem;
+  min-width: 4rem;
   text-align: end;
-  width: calc(100% - 2rem);
 }

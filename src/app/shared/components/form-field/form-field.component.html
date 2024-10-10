@@ -8,11 +8,9 @@
         <span class="optional">(Optional)</span>
       }
     </span>
-    <div class="field-input-container">
-      <div class="field-input" [class.focused]="field().isFocus()">
-        <ng-content select="input, textarea, select"></ng-content>
-        <ng-content select="button"></ng-content>
-      </div>
+    <div class="field-input" [class.focused]="field().isFocus()">
+      <ng-content select="input, textarea, select"></ng-content>
+      <ng-content select="button"></ng-content>
       <div class="field-validation">
         @if (control().touched && control().invalid) {
           <img

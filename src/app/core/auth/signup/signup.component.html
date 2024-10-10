@@ -11,13 +11,17 @@
   <app-form-field label="Password">
     <input app-field type="password" formControlName="password" />
     <app-hint-message class="password-strength-container">
+      @let passwordStrength = passwordStrength$ | async;
       <div class="level-list">
-        @for (level of passwordLevels; track level) {
-          <div class="level"></div>
+        @for (level of passwordLevels; track level; let index = $index) {
+          <div
+            class="level"
+            [class.level-active]="index <= passwordStrength"
+          ></div>
         }
       </div>
       <div class="password-strength-label">
-        {{ passwordLevels[passwordStrength()] }}
+        {{ passwordLevels[passwordStrength] }}
       </div>
     </app-hint-message>
   </app-form-field>
@@ -28,5 +32,5 @@
     }
   </app-form-field>
 
-  <button type="submit" class="btn btn-primary">Sign up</button>
+  <button type="submit" class="btn btn-primary btn-submit">Sign up</button>
 </form>
