@@ -1,0 +1,10 @@
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.btn-submit {
+  font-weight: 700;
+  margin-block-start: 1rem;
+}

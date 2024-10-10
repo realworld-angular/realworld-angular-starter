@@ -1,0 +1,13 @@
+<form [formGroup]="form" [isOptionalEnforced]="true" (ngSubmit)="submit()">
+  <app-form-field label="Email">
+    <input app-field type="text" formControlName="email" />
+    @if (form.controls.email.hasError("email")) {
+      <app-error-message>Invalid email format</app-error-message>
+    }
+  </app-form-field>
+  <app-form-field label="Password">
+    <input app-field type="password" formControlName="password" />
+  </app-form-field>
+
+  <button type="submit" class="btn btn-primary btn-submit">Log in</button>
+</form>
