@@ -5,7 +5,6 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
   standalone: true,
   imports: [],
   templateUrl: './about.component.html',
-  styleUrl: './about.component.css',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export default class AboutComponent {}

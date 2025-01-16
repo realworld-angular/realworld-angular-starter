@@ -37,7 +37,7 @@ import { FormDirective } from '../../directives/form.directive';
 export class FormFieldComponent implements AfterViewChecked {
   cdr = inject(ChangeDetectorRef);
 
-  label = input.required<string>();
+  label = input<string>();
   control = contentChild.required(NgControl);
   field = contentChild.required<FieldDirective>(FieldDirective);
   isOptionalEnforced = inject(FormDirective).isOptionalEnforced;

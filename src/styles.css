@@ -4,9 +4,12 @@
 @import url("./styles/components/form.css");
 @import url("./styles/tokens/colors.css");
 @import url("./styles/tokens/shapes.css");
+@import url("./styles/components/layout.css");
+@import url("./styles/components/card.css");
+@import url("./styles/components/event.css");
+@import url("./styles/components/post.css");
 
 body {
   font-family: Inter, sans-serif;
-  color: var(--text-color);
-  background-color: var(--background-color);
+  margin: 0;
 }

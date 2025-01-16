@@ -1,0 +1,22 @@
+<nav class="community-navigation">
+  <ul class="vertical-container">
+    @for (link of links(); track link.label) {
+      <li>
+        <a
+          class="vertical-link"
+          routerLink="{{ link.url }}"
+          routerLinkActive="active"
+        >
+          <img
+            class="vertical-link-icon"
+            ngSrc="/icons/{{ link.icon }}-icon.svg"
+            alt=""
+            height="24"
+            width="24"
+          />
+          <span>{{ link.label }}</span>
+        </a>
+      </li>
+    }
+  </ul>
+</nav>

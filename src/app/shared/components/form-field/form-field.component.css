@@ -32,9 +32,9 @@
   height: 2rem;
   border-width: 1px;
   border-style: solid;
-  border-color: var(--neutral-color-300);
+  border-color: var(--neutral-color-200);
   border-radius: var(--border-radius);
-  background-color: var(--neutral-color-700);
+  background-color: var(--neutral-color-100);
   padding-inline: 1rem 0.5rem;
   display: flex;
   gap: 1rem;

@@ -1,0 +1,36 @@
+.event-summary-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.event-summary-container {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.event-summary-date {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.2rem;
+  border-radius: var(--border-radius);
+  background-color: var(--neutral-color-200);
+  padding: 0.5rem;
+  min-height: 2.5rem;
+  min-width: 2.5rem;
+}
+
+.event-summary-title {
+  margin-block-start: 0.2rem;
+}
+
+.event-summary-title,
+.event-summary-date-day {
+  font-weight: 700;
+}
+
+.event-summary-date-month {
+  font-size: 0.75rem;
+}

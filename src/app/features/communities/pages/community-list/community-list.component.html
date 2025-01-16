@@ -1,1 +1,102 @@
-<p>community-list works!</p>
+<header class="header">
+  <div class="title">REALWORLD</div>
+  <input type="search" placeholder="Search" />
+</header>
+<div class="main-wrapper">
+  <nav>
+    <ul class="community-list">
+      <li>
+        <button class="btn-icon">
+          <img ngSrc="/icons/explore-icon.svg" alt="" height="24" width="24" />
+        </button>
+      </li>
+      @for (community of communityLinks(); track community) {
+        <li>
+          <button class="btn-icon btn-secondary">
+            <img ngSrc="/icons/add-icon.svg" alt="" height="24" width="24" />
+          </button>
+        </li>
+      }
+    </ul>
+  </nav>
+  <main class="main-container">
+    <div class="main-header">
+      <div class="card community-header">
+        <img height="100" width="100" ngSrc="/light-logo.svg" alt="" />
+        <div>
+          <h1 class="main-title">Angular Love</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem
+            cupiditate eveniet ipsam nihil porro quia reiciendis tenetur
+            voluptatum. Ad amet aspernatur eius error eveniet laudantium porro
+            quas repellat sapiente sint?
+          </p>
+        </div>
+        <div class="community-header-aside">
+          <p>345 members</p>
+          <button class="btn btn-primary">Join the community</button>
+        </div>
+      </div>
+    </div>
+    <div class="main-content">
+      <section class="section">
+        <nav>
+          <ul class="vertical-container">
+            @for (link of links(); track link.label) {
+              <li>
+                <a
+                  class="vertical-link"
+                  routerLink="{{ link.url }}"
+                  routerLinkActive="active"
+                >
+                  <img
+                    class="vertical-link-icon"
+                    ngSrc="/icons/{{ link.icon }}-icon.svg"
+                    alt=""
+                    height="24"
+                    width="24"
+                  />
+                  <span>{{ link.label }}</span>
+                </a>
+              </li>
+            }
+          </ul>
+        </nav>
+      </section>
+      <ul class="post-list">
+        @for (post of posts(); track post) {
+          <li class="card post">
+            <header class="post-header"></header>
+            <div>
+              <h3 class="post-title">{{ post.title }}</h3>
+              <p>{{ post.description }}</p>
+            </div>
+          </li>
+        }
+      </ul>
+      <section class="aside">
+        <article class="card">
+          <h3 class="card-header">Upcoming events</h3>
+          <ul class="event-summary-list">
+            @for (event of upcomingEvents(); track event) {
+              <li class="event-summary-container">
+                <div class="event-summary-date">
+                  <span class="event-summary-date-day">{{
+                    event.date | date: "d"
+                  }}</span>
+                  <span class="event-summary-date-month">{{
+                    event.date | date: "MMM" | uppercase
+                  }}</span>
+                </div>
+                <span class="event-summary-title">{{ event.title }}</span>
+              </li>
+            }
+          </ul>
+        </article>
+        <article class="card">
+          <h3 class="card-header">Trending posts</h3>
+        </article>
+      </section>
+    </div>
+  </main>
+</div>

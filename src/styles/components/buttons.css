@@ -29,7 +29,7 @@
   place-items: center;
   border-radius: var(--border-radius);
   cursor: pointer;
-  background-color: var(--neutral-bg-color);
+  background-color: var(--neutral-color-300);
   color: var(--text-color);
 }
 

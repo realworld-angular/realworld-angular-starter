@@ -80,8 +80,8 @@
     "src/**/*.{ts,js}": [
       "eslint --fix"
     ],
-    "src/**/*.css": [
-      "stylelint --fix"
+    "src/**/*.{css,scss}": [
+      "stylelint --fix --allow-empty-input"
     ]
   }
 }

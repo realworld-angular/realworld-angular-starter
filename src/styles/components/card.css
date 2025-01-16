@@ -1,0 +1,12 @@
+.card {
+  display: inline-block;
+  border-radius: var(--border-radius-lg);
+  background-color: white;
+  padding: 1.5rem;
+}
+
+.card-header {
+  display: block;
+  font-weight: 500;
+  margin-block-end: 1rem;
+}
