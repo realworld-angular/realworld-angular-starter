@@ -20,21 +20,20 @@ interface FormType {
 }
 
 @Component({
-  selector: 'app-login',
-  standalone: true,
-  imports: [
-    AsyncPipe,
-    ErrorMessageDirective,
-    FieldDirective,
-    FormDirective,
-    FormFieldComponent,
-    FormsModule,
-    HintMessageDirective,
-    ReactiveFormsModule,
-  ],
-  templateUrl: './login.component.html',
-  styleUrl: './login.component.css',
-  changeDetection: ChangeDetectionStrategy.OnPush,
+    selector: 'app-login',
+    imports: [
+        AsyncPipe,
+        ErrorMessageDirective,
+        FieldDirective,
+        FormDirective,
+        FormFieldComponent,
+        FormsModule,
+        HintMessageDirective,
+        ReactiveFormsModule,
+    ],
+    templateUrl: './login.component.html',
+    styleUrl: './login.component.css',
+    changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class LoginComponent {
   readonly submitForm = output<LoginPayload>();

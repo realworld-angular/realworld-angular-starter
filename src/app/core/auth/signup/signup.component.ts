@@ -25,20 +25,19 @@ interface FormType {
 }
 
 @Component({
-  selector: 'app-signup',
-  standalone: true,
-  imports: [
-    ReactiveFormsModule,
-    FormFieldComponent,
-    FieldDirective,
-    ErrorMessageDirective,
-    FormDirective,
-    AsyncPipe,
-    HintMessageDirective,
-  ],
-  templateUrl: './signup.component.html',
-  styleUrl: './signup.component.css',
-  changeDetection: ChangeDetectionStrategy.OnPush,
+    selector: 'app-signup',
+    imports: [
+        ReactiveFormsModule,
+        FormFieldComponent,
+        FieldDirective,
+        ErrorMessageDirective,
+        FormDirective,
+        AsyncPipe,
+        HintMessageDirective,
+    ],
+    templateUrl: './signup.component.html',
+    styleUrl: './signup.component.css',
+    changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class SignupComponent {
   readonly submitForm = output<SignupPayload>();

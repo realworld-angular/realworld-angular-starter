@@ -33,7 +33,6 @@ All commands are run from the root of the project, from a terminal:
 | `pnpm exec playwright test --ui`    | Run e2e tests in interactive UI mode           |
 | `pnpm exec playwright test --debug` | Runs the tests in debug mode.                  |
 | `pnpm exec playwright codegen`      | Auto generate tests with Codegen               |
-| `pnpm run test-storybook`           | Run Storybook tests                            |
 
 
 ## Contributors

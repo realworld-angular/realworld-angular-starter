@@ -21,18 +21,17 @@ import { FieldDirective } from '../../directives/field.directive';
 import { FormDirective } from '../../directives/form.directive';
 
 @Component({
-  selector: 'app-form-field',
-  standalone: true,
-  imports: [
-    AsyncPipe,
-    NgIf,
-    ErrorMessageDirective,
-    LowerCasePipe,
-    NgOptimizedImage,
-  ],
-  templateUrl: './form-field.component.html',
-  styleUrl: './form-field.component.css',
-  changeDetection: ChangeDetectionStrategy.OnPush,
+    selector: 'app-form-field',
+    imports: [
+        AsyncPipe,
+        NgIf,
+        ErrorMessageDirective,
+        LowerCasePipe,
+        NgOptimizedImage,
+    ],
+    templateUrl: './form-field.component.html',
+    styleUrl: './form-field.component.css',
+    changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class FormFieldComponent implements AfterViewChecked {
   cdr = inject(ChangeDetectorRef);
