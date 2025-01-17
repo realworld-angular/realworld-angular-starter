@@ -2,7 +2,6 @@ import { Directive, HostListener, signal } from '@angular/core';
 
 @Directive({
   selector: '[app-field]',
-  standalone: true,
 })
 export class FieldDirective {
   isFocus = signal(false);

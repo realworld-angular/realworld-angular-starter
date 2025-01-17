@@ -5,7 +5,6 @@ import { Directive } from '@angular/core';
  */
 @Directive({
   selector: 'app-error-message',
-  standalone: true,
   host: {
     class: 'field-error-message',
   },
