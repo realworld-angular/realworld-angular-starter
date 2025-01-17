@@ -2,7 +2,7 @@
   color: var(--text-color);
   background-color: transparent;
   padding: 0.5rem 1rem;
-  border-radius: var(--border-radius);
+  border-bottom: 2px solid transparent;
   font-weight: 500;
   line-height: 1.25rem;
   cursor: pointer;
@@ -10,11 +10,13 @@
 }
 
 .nav-link:hover {
-  background-color: var(--neutral-color-dark);
+  color: var(--primary-color);
+  border-bottom-color: var(--primary-color);
 }
 
 .nav-link:focus {
-  outline: 2px solid var(--primary-color);
+  color: var(--primary-color);
+  border-bottom-color: var(--primary-color);
 }
 
 .btn {
@@ -29,7 +31,6 @@
   place-items: center;
   border-radius: var(--border-radius);
   cursor: pointer;
-  background-color: var(--neutral-bg-color);
   color: var(--text-color);
 }
 
@@ -46,13 +47,17 @@
 
 .btn:hover,
 .btn-icon:hover {
-  background-color: var(--neutral-bg-color-hover);
+  background-color: var(--neutral-color-200);
 }
 
 .btn:focus,
 .btn-icon:focus {
   outline-offset: 2px;
   outline: var(--neutral-color) solid 2px;
+}
+
+.btn-outlined {
+  border: 2px solid var(--neutral-color);
 }
 
 .btn-primary {

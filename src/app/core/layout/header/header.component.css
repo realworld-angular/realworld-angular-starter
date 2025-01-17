@@ -30,7 +30,8 @@
 }
 
 .active-link {
-  outline: 2px solid var(--primary-color);
+  border-bottom-color: var(--primary-color);
+  color: var(--primary-color);
 }
 
 @media (prefers-reduced-motion: reduce) {

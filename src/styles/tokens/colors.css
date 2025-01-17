@@ -1,5 +1,5 @@
 :root {
-  --primary-hue: 312;
+  --primary-hue: 180;
   --primary-saturation: 50%;
   --primary-color-100: hsl(var(--primary-hue) var(--primary-saturation) 94%);
   --primary-color-200: hsl(var(--primary-hue) var(--primary-saturation) 84%);
@@ -13,7 +13,7 @@
   --primary-color-700: hsl(var(--primary-hue) var(--primary-saturation) 34%);
   --primary-color-800: hsl(var(--primary-hue) var(--primary-saturation) 24%);
   --primary-color-900: hsl(var(--primary-hue) var(--primary-saturation) 14%);
-  --primary-color: var(--primary-color-500);
+  --primary-color: var(--primary-color-600);
   --primary-bg-color: var(--primary-color-500);
   --primary-bg-color-hover: var(--primary-color-600);
   --secondary-hue: 168;
@@ -51,21 +51,21 @@
   --secondary-bg-color-hover: var(--secondary-color-600);
   --neutral-hue: 0;
   --neutral-saturation: 0%;
-  --neutral-color-100: hsl(var(--neutral-hue) var(--neutral-saturation) 89%);
-  --neutral-color-200: hsl(var(--neutral-hue) var(--neutral-saturation) 79%);
-  --neutral-color-300: hsl(var(--neutral-hue) var(--neutral-saturation) 69%);
-  --neutral-color-400: hsl(var(--neutral-hue) var(--neutral-saturation) 59%);
-  --neutral-color-500: hsl(var(--neutral-hue) var(--neutral-saturation) 49%);
-  --neutral-color-600: hsl(var(--neutral-hue) var(--neutral-saturation) 39%);
-  --neutral-color-700: hsl(var(--neutral-hue) var(--neutral-saturation) 29%);
-  --neutral-color-800: hsl(var(--neutral-hue) var(--neutral-saturation) 19%);
-  --neutral-color-900: hsl(var(--neutral-hue) var(--neutral-saturation) 9%);
+  --neutral-color-100: hsl(var(--neutral-hue) var(--neutral-saturation) 94%);
+  --neutral-color-200: hsl(var(--neutral-hue) var(--neutral-saturation) 84%);
+  --neutral-color-300: hsl(var(--neutral-hue) var(--neutral-saturation) 74%);
+  --neutral-color-400: hsl(var(--neutral-hue) var(--neutral-saturation) 64%);
+  --neutral-color-500: hsl(var(--neutral-hue) var(--neutral-saturation) 54%);
+  --neutral-color-600: hsl(var(--neutral-hue) var(--neutral-saturation) 44%);
+  --neutral-color-700: hsl(var(--neutral-hue) var(--neutral-saturation) 34%);
+  --neutral-color-800: hsl(var(--neutral-hue) var(--neutral-saturation) 24%);
+  --neutral-color-900: hsl(var(--neutral-hue) var(--neutral-saturation) 14%);
   --neutral-color: var(--neutral-color-500);
-  --neutral-bg-color: var(--neutral-color-600);
-  --neutral-bg-color-hover: var(--neutral-color-700);
-  --text-color: #e0e0e0;
-  --text-color-invert: #181818;
-  --background-color: #181818;
+  --neutral-bg-color: var(--neutral-color-500);
+  --neutral-bg-color-hover: var(--neutral-color-600);
+  --text-color: var(--neutral-color-900);
+  --text-color-invert: var(--neutral-color-100);
+  --background-color: var(--neutral-color-100);
   --error-color: #cf6679;
   --success-color: #0f0;
   --svg-color-filter: brightness(0) saturate(100%) invert(0%) sepia(3%)
